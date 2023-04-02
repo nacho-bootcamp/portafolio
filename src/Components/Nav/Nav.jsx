@@ -15,8 +15,14 @@ const Nav = () => {
           <p>Proyects</p>
         </div>
         <div className={styles.Image}>
-          <img src={Github} alt="Github" />
-          <img src={Linkeding} alt="Linkeding" />
+          <a className={styles.link} href="">
+            <img className={styles.linkIcon} src={Github} alt="Github" />
+            <span className={styles.title}>Github</span>
+          </a>
+          <a className={styles.link} href="">
+            <img className={styles.linkIcon} src={Linkeding} alt="Linkeding" />
+            <span className={styles.title}> Linkeding</span>
+          </a>
         </div>
         <div className={styles.boton}>
           <button>Let`s Connect</button>
