@@ -1,0 +1,48 @@
+.Container{
+  display: flex;
+justify-content: space-between;
+margin: 0px 30px;
+background-color: rgb(39, 39, 39,0.5);
+padding: 0 8px;
+
+}
+
+
+.Subcontainer{
+  display: flex;
+  gap: 30px;
+}
+
+.Links{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 20px;
+}
+
+.Image{
+  display: flex;
+  margin:15px 3px;
+  gap: 7px;
+  
+  
+}
+
+.Image img{
+  border-radius: 50%;
+  background-color: rgb(66, 65, 65);
+  padding: 5px;
+  border: 2px solid white;
+}
+
+
+.boton{
+  display: flex;
+  align-items: center;
+}
+
+.boton button{
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
