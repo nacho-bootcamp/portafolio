@@ -1,21 +1,35 @@
 .Container{
   display: flex;
 justify-content: space-between;
-background-color: rgb(39, 39, 39,0.5);
+align-items: center;
+height: 60px;
 padding: 0 20px;
+background-color: #1a1a1a;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  box-shadow: -2px 5px 20px rgba(0, 0, 0, 0.6);
+  
 
 }
 .Subcontainer{
   display: flex;
   gap: 30px;
+  
 }
 
-.Links{
+.Links{ 
   display: flex;
   align-items: center;
   gap: 40px;
   font-size: 20px;
 }
+
+.Links a {
+    text-decoration: none;
+      color: white;
+}
+
 
 .Image{
   display: flex;
@@ -32,16 +46,6 @@ padding: 0 20px;
 }
 
 
-.boton{
-  display: flex;
-  align-items: center;
-}
-
-.boton button{
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 20px;
-}
 
 .link{
   display: inline-flex;
@@ -61,8 +65,9 @@ padding: 0 20px;
 }
 
 .link:hover{
-    border: 1px solid red;
+  border: 1px solid white;
 }
+
 
 
 link::before{
@@ -103,8 +108,15 @@ link::before{
   transform: translateX(100%);
   transition: transform 0.2s ease-in;
   display: block;
- padding-left: 23px;
+  padding-left: 23px;
   text-align: center;
   text-indent: 20px;
   width: 100%;
+} 
+
+@media screen and (max-width: 700px) {  
+  .link {
+    display: none;
+  }
+  
 }

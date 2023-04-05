@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Nav.module.css";
 import Github from "../../assets/img/github.png";
 import Linkeding from "../../assets/img/linkedin.png";
 const Nav = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className={styles.Container}>
+    <nav className={styles.Container}>
       <div className={styles.Logo}>
         <h2>Portafolio </h2>
       </div>
       <div className={styles.Subcontainer}>
         <div className={styles.Links}>
-          <p>Home</p>
-          <p>Skills</p>
-          <p>Proyects</p>
+          <a href="#profile">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#proyect">Proyects</a>
         </div>
         <div className={styles.Image}>
           <a className={styles.link} href="">
@@ -24,11 +26,14 @@ const Nav = () => {
             <span className={styles.title}> Linkeding</span>
           </a>
         </div>
-        <div className={styles.boton}>
-          <button>Let`s Connect</button>
+
+        <div className={styles.toggle} onClick={() => setOpen(!open)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Nav;
