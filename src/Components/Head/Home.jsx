@@ -13,16 +13,28 @@ function Home() {
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 `}
       >
-        <a href="" className="text-one font-sans">
+        <a
+          href=""
+          className="text-one font-black hover:bg-tree px-4 py-1 rounded-[20px]"
+        >
           Inicio
         </a>
-        <a href="" className="text-one">
+        <a
+          href=""
+          className="text-one font-black text-base  hover:bg-tree px-4 py-1 rounded-[20px]"
+        >
           Habilidades
         </a>
-        <a href="" className="text-one">
+        <a
+          href=""
+          className="text-one font-black text-base  hover:bg-tree px-4 py-1 rounded-[20px]"
+        >
           Apps
         </a>
-        <a href="" className="text-one">
+        <a
+          href=""
+          className="text-one font-black text-base  hover:bg-tree px-4 py-1 rounded-[20px]"
+        >
           Contacto
         </a>
       </nav>
