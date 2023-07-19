@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logotipo1.png";
-
+import { RiMenuAddFill, RiCloseFill } from "react-icons/ri";
 function Home() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className="flex w-full items-center p-1 h-[10vh]">
-      <div className="w-1/6 ">
-        <img className="w-24 h-24" src={logo} alt="logotipo" />
+    <header className="flex w-full items-center justify-between xl:justify-start p-4 h-[10vh] z-50">
+      <div className="xl:w-1/6 ">
+        <img className="w-20 h-20 p-1" src={logo} alt="logotipo" />
       </div>
-      <nav className="w-2/3 flex items-center justify-center gap-12 text-base ">
+      <nav
+        className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${
+          showMenu ? "left-0" : "-left-full"
+        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 `}
+      >
         <a href="" className="text-one font-sans">
           Inicio
         </a>
@@ -21,13 +26,12 @@ function Home() {
           Contacto
         </a>
       </nav>
-      <div className="flex justify-">
-        <ul className="flex item-center gap-5">
-          <li>GitHub</li>
-          <li>Gmail</li>
-          <li>Linkedin</li>
-        </ul>
-      </div>
+      <button
+        onClick={() => setShowMenu(!showMenu)}
+        className="text-2xl p-2 xl:hidden"
+      >
+        {showMenu ? <RiCloseFill /> : <RiMenuAddFill />}
+      </button>
     </header>
   );
 }
