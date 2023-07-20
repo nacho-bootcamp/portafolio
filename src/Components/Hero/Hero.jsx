@@ -11,7 +11,7 @@ import { FcCalendar } from "react-icons/fc";
 
 function Hero() {
   return (
-    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
+    <section className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8">
       <div className=" md:col-span-3 flex items-center justify-center relative ">
         {/* foto */}
         <img
@@ -51,15 +51,21 @@ function Hero() {
       {/* info */}
       <div className=" md:col-span-5 flex items-center justify-center">
         <div>
-          <h1 className="font-black text-4xl text-one">HOLA MI NOMBRE ES </h1>
-          <h2 className="text-6xl text-two font-black">IGNACIO CARDOZO</h2>
-          <h3 className="text-2xl text-one font-black">FullStack Developer</h3>
-          <p className="text-lg py-[50px] text-one font-black">
+          <h1 className=" font-black text-center text-4xl xl:text-4xl text-one">
+            HOLA MI NOMBRE ES{" "}
+          </h1>
+          <h2 className="text-center text-6xl xl:text-6xl text-two font-black">
+            IGNACIO CARDOZO
+          </h2>
+          <h3 className="text-center text-4xl xl:text-2xl text-one font-black">
+            Soy FullStack Developer
+          </h3>
+          <p className="text-center text-2xl py-8 xl:text-lg xl:py-[50px] text-one font-black">
             Soy un desarrollador FullStack apasionado con la <br /> programacion
             y tengo 2 años de experiencia en <br />
             este increible mundo .
           </p>
-          <div className="flex gap-8">
+          <div className="flex gap-8 justify-center">
             <button className="bg-two text-white py-2 px-8 rounded-xl tetx-xl font-black">
               contactarme
             </button>

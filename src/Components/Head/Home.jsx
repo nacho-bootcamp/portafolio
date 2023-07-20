@@ -11,7 +11,7 @@ function Home() {
       <nav
         className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${
           showMenu ? "left-0" : "-left-full"
-        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 `}
+        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 z-50 `}
       >
         <a
           href=""
@@ -40,7 +40,7 @@ function Home() {
       </nav>
       <button
         onClick={() => setShowMenu(!showMenu)}
-        className="text-2xl p-2 xl:hidden"
+        className="text-2xl p-2 xl:hidden z-50"
       >
         {showMenu ? <RiCloseFill /> : <RiMenuAddFill />}
       </button>
