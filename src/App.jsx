@@ -1,3 +1,4 @@
+import Habilidades from "./Components/Habilidades/Habilidades";
 import Home from "./Components/Head/Home";
 import Hero from "./Components/Hero/Hero";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="w-[658px] sm:w-full">
       <Home />
       <Hero />
+      <Habilidades />
     </div>
   );
 }
