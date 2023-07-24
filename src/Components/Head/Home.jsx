@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import logo from "../../assets/img/logotipo1.png";
 import { RiMenuAddFill, RiCloseFill } from "react-icons/ri";
+import github from "../../assets/img/github.png";
+import linkedin from "../../assets/img/linkedin.png";
+import gmail from "../../assets/img/gmail.png";
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -26,7 +29,7 @@ function Home() {
           Habilidades
         </a>
         <a
-          href=""
+          href="Aplicaciones"
           className="text-one font-black text-base  hover:bg-tree px-4 py-1 rounded-[20px]"
         >
           Apps
@@ -38,6 +41,17 @@ function Home() {
           Contacto
         </a>
       </nav>
+      <div className=" hidden z-50 xl:flex gap-x-5 pr-4 w-[150px]">
+        <a href="Linkedin">
+          <img src={linkedin} alt="" />
+        </a>
+        <a href="Gmail">
+          <img src={gmail} alt="" />
+        </a>
+        <a href="Github">
+          <img src={github} alt="" />
+        </a>
+      </div>
       <button
         onClick={() => setShowMenu(!showMenu)}
         className="text-2xl p-2 xl:hidden z-50"

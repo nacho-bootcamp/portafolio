@@ -67,7 +67,7 @@ function Hero() {
           </p>
           <div className="flex gap-8 justify-center">
             <button className="bg-two text-white py-2 px-8 rounded-xl tetx-xl font-black">
-              contactarme
+              Curriculum
             </button>
             <button className="flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white bg-two ">
               <FcCalendar className="w-16 h-12" />
