@@ -4,6 +4,7 @@ import react from "../../assets/img/react.jpg";
 import javascript from "../../assets/img/js.png";
 import nodejs from "../../assets/img/nodejs.png";
 import java from "../../assets/img/java.jpg";
+import CV from "../../Curriculum/CV.Progrmacion.pdf";
 
 import { Fondo } from "../Fondo/Fondo";
 
@@ -11,7 +12,10 @@ import { FcCalendar } from "react-icons/fc";
 
 function Hero() {
   return (
-    <section className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8">
+    <section
+      id="Inicio"
+      className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8"
+    >
       <div className=" md:col-span-3 flex items-center justify-center relative ">
         {/* foto */}
         <img
@@ -49,9 +53,9 @@ function Hero() {
         />
       </div>
       {/* info */}
-      <div className=" md:col-span-5 flex items-center justify-center">
+      <div className="  md:col-span-5 flex items-center justify-center">
         <div>
-          <h1 className=" font-black text-center text-4xl xl:text-4xl text-one">
+          <h1 className=" animate-rotate-y font-black text-center text-4xl xl:text-4xl text-one">
             HOLA MI NOMBRE ES{" "}
           </h1>
           <h2 className="text-center text-6xl xl:text-6xl text-two font-black">
@@ -66,9 +70,13 @@ function Hero() {
             este increible mundo .
           </p>
           <div className="flex gap-8 justify-center">
-            <button className="bg-two text-white py-2 px-8 rounded-xl tetx-xl font-black">
+            <a
+              download
+              href={CV}
+              className="bg-two text-white pb-2 pt-[18px] px-8 rounded-xl tetx-xl font-black"
+            >
               Curriculum
-            </button>
+            </a>
             <button className="flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white bg-two ">
               <FcCalendar className="w-16 h-12" />
               Agendar un Horario
