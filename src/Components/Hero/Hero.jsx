@@ -77,10 +77,12 @@ function Hero() {
             >
               Curriculum
             </a>
-            <button className="flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white bg-two ">
-              <FcCalendar className="w-16 h-12" />
-              Agendar un Horario
-            </button>
+            <a href="https://calendly.com/ignaciocardozoxd12">
+              <button className="flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white bg-two ">
+                <FcCalendar className="w-16 h-12" />
+                Agendar un Horario
+              </button>
+            </a>
           </div>
         </div>
       </div>
