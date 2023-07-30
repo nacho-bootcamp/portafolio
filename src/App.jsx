@@ -1,6 +1,8 @@
+import Formulario from "./Components/Formulario/Formulario";
 import Habilidades from "./Components/Habilidades/Habilidades";
 import Home from "./Components/Head/Home";
 import Hero from "./Components/Hero/Hero";
+import Aplicaciones from "./Components/MisAplicaciones/Aplicaciones";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Home />
       <Hero />
       <Habilidades />
+      <Aplicaciones />
+      <Formulario />
     </div>
   );
 }

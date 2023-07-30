@@ -18,7 +18,10 @@ import {
 
 const Habilidades = () => {
   return (
-    <div className=" bg-gray-200 p-8 flex flex-col items-center justify-center gap-8">
+    <div
+      id="Habilidades"
+      className=" bg-gray-200 p-8 flex flex-col items-center justify-center gap-8"
+    >
       <h1 className="text-center font-semibold text-5xl text-one">
         Habilidades <span className="text-two">Tecnicas</span>
       </h1>
