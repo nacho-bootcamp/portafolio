@@ -9,6 +9,8 @@ import react from "../../assets/img/reactIcono.png";
 import figma from "../../assets/img/figma.png";
 import git from "../../assets/img/git.png";
 import trello from "../../assets/img/trello.png";
+import typescript from "../../assets/img/typescript.png";
+import { SiNestjs } from "react-icons/si";
 import {
   BiLogoTailwindCss,
   BiLogoMongodb,
@@ -30,6 +32,10 @@ const Habilidades = () => {
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <img src={javaIcon} alt="java" className="w-44 h-44" />
           <h1 className="font-bold text-one text-2xl">Java</h1>
+        </div>
+        <div className=" flex flex-col items-center justify-center gap-y-5">
+          <img src={typescript} alt="Typescript" className="w-44 h-44" />
+          <h1 className="font-bold text-one text-2xl">Typescript</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <img src={javascript} alt="js" className="w-40 h-40 rounded-3xl" />
@@ -69,6 +75,10 @@ const Habilidades = () => {
           <img src={react} alt="react" className="w-40 h-40 rounded-lg" />
           <h1 className="font-bold text-one text-2xl">React</h1>
         </div>
+        <div className=" flex flex-col items-center justify-center gap-y-5">
+          <SiNestjs className="w-40 h-40 rounded-lg text-[#E0234E]" />
+          <h1 className="font-bold text-one text-2xl">NestJS</h1>
+        </div>
       </div>
       <h2 className="text-one font-bold text-3xl">Base de Datos</h2>
       <div className="inline-flex justify-center flex-wrap gap-x-32 gap-y-10 ">
@@ -76,6 +86,7 @@ const Habilidades = () => {
           <BiLogoMongodb className="w-40 h-40 rounded-lg text-[#01EC64]" />
           <h1 className="font-bold text-one text-2xl">MongoDB</h1>
         </div>
+
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <BiLogoPostgresql className="w-40 h-40 rounded-lg text-[#336791]" />
           <h1 className="font-bold text-one text-2xl">PostgresSQL</h1>
