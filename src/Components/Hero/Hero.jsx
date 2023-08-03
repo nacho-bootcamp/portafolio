@@ -14,41 +14,48 @@ function Hero() {
   return (
     <section
       id="Inicio"
-      className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8"
+      className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8 mt-24"
     >
       <div className=" md:col-span-3 flex items-center justify-center relative ">
         {/* foto */}
-        <img
-          src={Foto}
-          alt="foto"
-          className="object-cover  h-[705px] mb-[130px] mr-[50px] z-10 "
-        />
+        <div className="z-10 flex justify-center ">
+          <img
+            src={Foto}
+            alt="foto"
+            className="object-cover  h-[700px]  mr-[50px] relative right-6 pb-4  "
+          />
+          <div className=" flex  absolute bg-white justify-center items-center  w-[315px] rounded-lg h-32  bottom-14  shadow-2xl ">
+            <h1 className="animate-rotate-y font-medium text-center text-4xl xl:text-3xl text-one">
+              BIENVENIDOS
+            </h1>
+          </div>
+        </div>
         {/* Circulo */}
-        <Fondo className=" absolute w-[665px] rounded-lg  " />
+        <Fondo className=" absolute w-[640px] rounded-lg  mt-24 " />
 
         {/* logos */}
         <img
           src={javascript}
           alt="react"
-          className="w-20 h-20 object-cover  rounded-full absolute left-[90%]
+          className="w-20 h-20 object-cover  rounded-full absolute left-[90%] 
           top-[10%]"
         />
         <img
           src={nodejs}
           alt="react"
-          className="w-20 h-20 object-cover    rounded-full absolute left-[15%]
+          className="w-20 h-20 object-cover    rounded-full absolute left-[15%] 
           top-[1%]"
         />
         <img
           src={react}
           alt="react"
-          className="w-20 h-20 object-cover   border-l-6  border-gray-600 rounded-full absolute left-[97%]
+          className="w-20 h-20 object-cover   border-l-6  border-gray-600 rounded-full absolute left-[97%] 
           top-[52%]"
         />
         <img
           src={java}
           alt="react"
-          className="w-20 h-20 object-cover    rounded-full absolute right-[85%] rotate-12
+          className="w-20 h-20 object-cover    rounded-full absolute right-[85%] rotate-12  duration-75
           bottom-[10%]"
         />
       </div>
@@ -73,12 +80,15 @@ function Hero() {
             <a
               download
               href={CV}
-              className="bg-two text-white pb-2 pt-[18px] px-8 rounded-xl tetx-xl font-black"
+              className=" transition ease-in-out delay-150 shadow-blue-500/50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white pb-2 pt-[18px] px-8 rounded-xl tetx-xl font-black"
             >
               Curriculum
             </a>
             <a href="https://calendly.com/ignaciocardozoxd12">
-              <button className="flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white bg-two ">
+              <button
+                className="  transition ease-in-out delay-150 shadow-blue-600/50 bg-blue-500 hover:-translate-y-1
+        hover:scale-110 hover:bg-indigo-500 duration-300 flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black text-white  "
+              >
                 <FcCalendar className="w-16 h-12" />
                 Agendar un Horario
               </button>

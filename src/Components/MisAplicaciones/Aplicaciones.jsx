@@ -25,10 +25,12 @@ const Aplicaciones = () => {
           <h3 className="text-center text-one font-bold text-2xl">
             Proyecto Indivial
           </h3>
-          <div className="flex justify-center items-center gap-7 py-7 ">
-            <img src={pi} alt="" className="w-[500px] rounded-3xl" />
-            <img src={pi2} alt="" className="w-[500px] rounded-3xl" />
-          </div>
+          <a href="https://github.com/nacho-bootcamp/PI-Country">
+            <div className="flex justify-center items-center gap-7 py-7  transition duration-1000 ease-out transform hover:scale-105">
+              <img src={pi} alt="" className="w-[500px] rounded-3xl" />
+              <img src={pi2} alt="" className="w-[500px] rounded-3xl" />
+            </div>
+          </a>
           <div className="flex flex-col items-center justify-center ">
             <h4 className="text-center pb-5 text-one text-xl font-medium">
               Aplicacion para ver las actividades y la informacion de cada pais
@@ -44,10 +46,12 @@ const Aplicaciones = () => {
         </div>
         <div>
           <h3 className="text-center text-one font-bold text-2xl">Market-X</h3>
-          <div className="flex justify-center items-center gap-7 py-7 ">
-            <img src={pf} alt="" className="w-[500px] rounded-3xl" />
-            <img src={pf2} alt="" className="w-[500px] rounded-3xl" />
-          </div>
+          <a href="https://github.com/nacho-bootcamp/MarketX-2">
+            <div className="flex justify-center items-center gap-7 py-7  transition duration-1000 ease-out transform hover:scale-105">
+              <img src={pf} alt="" className="w-[500px] rounded-3xl" />
+              <img src={pf2} alt="" className="w-[500px] rounded-3xl" />
+            </div>
+          </a>
           <div className="flex flex-col items-center justify-center ">
             <h4 className="text-center pb-5 text-one text-xl font-medium">
               Aplicacion simulando un ecommerce para poder realizar compras

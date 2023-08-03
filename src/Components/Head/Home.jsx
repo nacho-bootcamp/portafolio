@@ -8,12 +8,12 @@ import gmail from "../../assets/img/gmail.png";
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className="flex w-full items-center justify-between xl:justify-start p-4 h-[10vh] z-50">
+    <header className="flex w-full items-center justify-between xl:justify-start p-4 h-[10vh] z-50 fixed top-0 left-0  bg-white mb-9 ">
       <div className="xl:w-1/6 ">
         <img className="w-14 h-12 p-1" src={logo} alt="logotipo" />
       </div>
       <nav
-        className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${
+        className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full  ${
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 z-50 `}
       >
