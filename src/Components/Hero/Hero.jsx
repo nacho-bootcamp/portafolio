@@ -1,5 +1,5 @@
 import React from "react";
-import Foto from "../../assets/img/fotopotafolio.png";
+import Foto from "../../assets/img/portfolio.png";
 import react from "../../assets/img/react.jpg";
 import javascript from "../../assets/img/js.png";
 import nodejs from "../../assets/img/nodejs.png";
@@ -16,51 +16,18 @@ function Hero() {
       id="Inicio"
       className="min-h-[90vh] grid grid-cols-1 md:grid-cols-8 mt-24"
     >
-      <div className=" md:col-span-3 flex items-center justify-center relative ">
+      <div className=" md:col-span-4 flex items-center justify-center relative ">
         {/* foto */}
-        <div className="z-10 flex justify-center ">
+        <div className="z-10 flex justify-center items-center ">
           <img
             src={Foto}
             alt="foto"
-            className="object-cover  h-[700px]  mr-[50px] relative right-6 pb-4  "
+            className="object-cover w-[550px] h-[600px] relative  mb-20 rounded-[100%] bg-blue-200"
           />
-          <div className=" flex  absolute bg-white justify-center items-center  w-[315px] rounded-lg h-32  bottom-14  shadow-2xl ">
-            <h1 className="animate-rotate-y font-medium text-center text-4xl xl:text-3xl text-one">
-              BIENVENIDOS
-            </h1>
-          </div>
         </div>
-        {/* Circulo */}
-        <Fondo className=" absolute w-[640px] rounded-lg  mt-24 " />
-
-        {/* logos */}
-        <img
-          src={javascript}
-          alt="react"
-          className="w-20 h-20 object-cover  rounded-full absolute left-[90%] 
-          top-[10%]"
-        />
-        <img
-          src={nodejs}
-          alt="react"
-          className="w-20 h-20 object-cover    rounded-full absolute left-[15%] 
-          top-[1%]"
-        />
-        <img
-          src={react}
-          alt="react"
-          className="w-20 h-20 object-cover   border-l-6  border-gray-600 rounded-full absolute left-[97%] 
-          top-[52%]"
-        />
-        <img
-          src={java}
-          alt="react"
-          className="w-20 h-20 object-cover    rounded-full absolute right-[85%] rotate-12  duration-75
-          bottom-[10%]"
-        />
       </div>
       {/* info */}
-      <div className="  md:col-span-5 flex items-center justify-center">
+      <div className="  md:col-span-3 flex items-center justify-center">
         <div>
           <h1 className=" animate-rotate-y font-black text-center text-4xl xl:text-4xl text-one">
             HOLA MI NOMBRE ES{" "}
