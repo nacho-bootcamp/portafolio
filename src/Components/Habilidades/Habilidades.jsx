@@ -16,6 +16,7 @@ import {
   BiLogoMongodb,
   BiLogoPostgresql,
   BiLogoRedux,
+  BiLogoAngular,
 } from "react-icons/bi";
 
 const Habilidades = () => {
@@ -31,10 +32,10 @@ const Habilidades = () => {
       <div className="inline-flex justify-center flex-wrap gap-y-10 gap-x-32 ">
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <img src={javaIcon} alt="java" className="w-44 h-44" />
-          <h1 className="font-bold text-one text-2xl">Java</h1>
+          <h1 className="font-bold text-one text-2xl ">Java</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={typescript} alt="Typescript" className="w-44 h-44" />
+          <img src={typescript} alt="Typescript" className="w-40 h-40" />
           <h1 className="font-bold text-one text-2xl">Typescript</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
@@ -74,6 +75,10 @@ const Habilidades = () => {
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <img src={react} alt="react" className="w-40 h-40 rounded-lg" />
           <h1 className="font-bold text-one text-2xl">React</h1>
+        </div>
+        <div className=" flex flex-col items-center justify-center gap-y-5">
+          <BiLogoAngular className="w-44 h-44 rounded-lg text-[#E0234E]" />
+          <h1 className="font-bold text-one text-2xl">Angular</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
           <SiNestjs className="w-40 h-40 rounded-lg text-[#E0234E]" />
