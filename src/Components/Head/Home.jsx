@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-
 import { RiMenuAddFill, RiCloseFill } from "react-icons/ri";
-import github from "../../assets/img/github.png";
-import linkedin from "../../assets/img/linkedin.png";
-import gmail from "../../assets/img/gmail.png";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { CgMail } from "react-icons/cg";
 
 function Home() {
   const [showMenu, setShowMenu] = useState(false);
@@ -44,24 +42,24 @@ function Home() {
           Contacto
         </a>
       </nav>
-      <div className=" hidden z-50 xl:flex gap-x-5 pr-4 w-[150px]">
+      <div className=" xl:flex  flex items-center justify-center  gap-x-5  ">
         <a
           href="https://www.linkedin.com/in/ignacio-leonel-cardozo-b34307244/"
           className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
         >
-          <img src={linkedin} alt="" />
+          <FiLinkedin className="w-8 h-8 text-indigo-500" />
         </a>
         <a
           href="mailto:ignaciocardozoxd12@gmail.com"
           className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
         >
-          <img src={gmail} alt="" />
+          <CgMail className="w-8 h-8 text-orange-400" />
         </a>
         <a
           href="https://github.com/nacho-bootcamp"
           className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
         >
-          <img src={github} alt="" />
+          <FiGithub className="w-8 h-8 text-indigo-500  " />
         </a>
       </div>
       <button

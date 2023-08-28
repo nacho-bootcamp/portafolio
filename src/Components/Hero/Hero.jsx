@@ -1,7 +1,6 @@
 import React from "react";
 import Foto from "../../assets/img/portfolio.png";
 import CV from "../../Curriculum/CV-IgnacioCardozo.pdf";
-
 import { FcCalendar } from "react-icons/fc";
 
 function Hero() {
@@ -18,14 +17,13 @@ function Hero() {
           </h1>
           <h2 className="text-center text-6xl xl:text-6xl font-black ">
             <span className="bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text">
-              IGNACIO
+              IGNACIO CARDOZO
             </span>
-            <span className=""> CARDOZO</span>
           </h2>
           <h3 className="text-center text-4xl xl:text-2xl text-gray-400 font-black mt-5">
             Full-Stack <span className="text-[#544FB9]">Web Developer</span>
           </h3>
-          <p className="text-center text-2xl py-8 xl:text-lg xl:py-[50px] text-gray-400 font-black">
+          <p className="text-center text-2xl py-8 xl:text-lg xl:py-[40px] text-gray-400 font-black">
             Soy un desarrollador FullStack apasionado con la <br /> programacion
             y tengo 2 años de experiencia en <br />
             este increible mundo .
@@ -36,12 +34,12 @@ function Hero() {
               href={CV}
               className=" transition ease-in-out delay-150 shadow-blue-500/50 bg-orange-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white pb-2 pt-[18px] px-8 rounded-xl tetx-xl font-black"
             >
-              Curriculum
+              CURRICULUM
             </a>
             <a href="https://calendly.com/ignaciocardozoxd12">
               <button className="underline hover:-translate-y-1 text-[#544FB9] hover:scale-110 duration-300 flex items-center justify-start gap-4 py-2 px-8 rounded-xl font-black   ">
                 <FcCalendar className="w-16 h-12" />
-                Agendar una Reunion
+                AGENDAR UNA REUNION
               </button>
             </a>
           </div>
