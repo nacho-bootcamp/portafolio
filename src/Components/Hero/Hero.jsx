@@ -12,7 +12,7 @@ function Hero() {
       {/* info */}
       <div className="  md:col-span-4 flex items-center justify-center">
         <div>
-          <h1 className=" animate-rotate-y font-black text-center text-4xl xl:text-4xl text-gray-400 ">
+          <h1 className="font-black text-center text-4xl xl:text-4xl text-gray-400 ">
             HOLA MI NOMBRE ES
           </h1>
           <h2 className="text-center text-6xl xl:text-6xl font-black ">
