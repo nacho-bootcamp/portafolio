@@ -35,84 +35,98 @@ const InfiniteCarousel = () => {
 
   return (
     <div className="w-3/4 mx-auto my-20 pl-5 ">
-      <h1 className="text-center text-5xl mb-14 font-bold">Mis Tecnologias</h1>
-      <Slider {...settings} className="custom-carousel">
+      <h1 className="text-center text-5xl mb-14 font-bold bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text pb-6">
+        Mis Tecnologias
+      </h1>
+      <Slider {...settings} className="py-4">
         <div>
-          <img src={typescript} alt="Typescript" className="w-32 h-32" />
-          <h1 className="font-bold text-one text-2xl">Typescript</h1>
+          <img src={typescript} alt="Typescript" className="w-32 h-32 ml-28" />
+          <h1 className="font-bold text-one text-2xl mt-6 text-center">
+            Typescript
+          </h1>
         </div>
         <div>
-          <img src={javaIcon} alt="java" className="w-36 h-36" />
-          <h1 className="font-bold text-one text-2xl ">Java</h1>
+          <img src={javaIcon} alt="java" className="w-32 h-32 ml-32" />
+          <h1 className="font-bold text-one text-2xl pl-10 mt-6 text-center ">
+            Java
+          </h1>
         </div>
         <div>
-          <img src={javascript} alt="js" className="w-36 h-36 rounded-3xl" />
-          <h1 className="font-bold text-one text-2xl ">Javascript</h1>
+          <img
+            src={javascript}
+            alt="js"
+            className="w-32 h-32 rounded-2xl ml-[120px]"
+          />
+          <h1 className="font-bold text-one text-2xl pl-3 mt-6 text-center">
+            Javascript
+          </h1>
+        </div>
+        <div className=" flex flex-col items-center justify-center  gap-y-5">
+          <img src={html} alt="html" className="w-32 h-32 ml-28" />
+          <h1 className="font-bold text-one text-2xl mt-6 text-center">HTML</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={html} alt="html" className="w-36 h-36 rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">HTML</h1>
+          <img src={css} alt="css" className="w-32 h-32  ml-28 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center ">CSS</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={css} alt="css" className="w-36 h-36 rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">CSS</h1>
-        </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
+        <div className=" flex flex-col  gap-y-5">
           <img
             src={bootstrap}
             alt="bootstrap"
-            className="w-36 h-36 rounded-lg"
+            className="w-32 h-32 ml-28 rounded-lg mb-4"
           />
-          <h1 className="font-bold text-one text-2xl">Bootstrap</h1>
+          <h1 className="font-bold text-one text-2xl text-center">Bootstrap</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5 ">
-          <BiLogoTailwindCss className="w-36 h-36 text-[#38BDF8]" />
-          <h1 className="font-bold text-one text-2xl">Tailwind</h1>
+        <div className=" flex flex-col  gap-y-5 ">
+          <BiLogoTailwindCss className="w-36 h-36 text-[#38BDF8] ml-28" />
+          <h1 className="font-bold text-one text-2xl text-center">Tailwind</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={express} alt="express" className="w-36 h-36  rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">Express</h1>
+        <div className=" flex flex-col  gap-y-5">
+          <img src={express} alt="express" className="w-32 h-32  ml-28 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center">Express</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={react} alt="react" className="w-36 h-36  rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">React</h1>
+        <div className=" flex flex-col gap-y-5">
+          <img src={react} alt="react" className="w-32 h-32 ml-28 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center">React</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <BiLogoAngular className="w-36 h-36  rounded-lg text-[#E0234E]" />
-          <h1 className="font-bold text-one text-2xl">Angular</h1>
+        <div className=" flex flex-col  gap-y-5">
+          <BiLogoAngular className="w-36 h-36 text-[#E0234E] ml-[105px]" />
+          <h1 className="font-bold text-one text-2xl text-center">Angular</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <SiNestjs className="w-36 h-36  rounded-lg text-[#E0234E]" />
-          <h1 className="font-bold text-one text-2xl">NestJS</h1>
+        <div className=" flex flex-col gap-y-5">
+          <SiNestjs className="w-32 h-32 text-[#E0234E] ml-20 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center">NestJS</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <BiLogoMongodb className="w-36 h-36  rounded-lg text-[#01EC64]" />
-          <h1 className="font-bold text-one text-2xl">MongoDB</h1>
+        <div className=" flex flex-col  gap-y-5">
+          <BiLogoMongodb className="w-36 h-36 text-[#01EC64] ml-24" />
+          <h1 className="font-bold text-one text-2xl text-center">MongoDB</h1>
         </div>
 
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <BiLogoPostgresql className="w-36 h-36  rounded-lg text-[#336791]" />
-          <h1 className="font-bold text-one text-2xl">PostgresSQL</h1>
+        <div className=" flex flex-col gap-y-5">
+          <BiLogoPostgresql className="w-36 h-36 text-[#336791] ml-24 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center">
+            PostgresSQL
+          </h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={figma} alt="figma" className="w-32 h-32 rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">Figma</h1>
+        <div className=" flex flex-col">
+          <img src={figma} alt="figma" className="w-32 h-32  ml-32 mb-7" />
+          <h1 className="font-bold text-one text-2xl text-center">Figma</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={git} alt="figma" className="w-36 h-36  rounded-lg" />
-          <h1 className="font-bold text-one text-2xl">Git</h1>
+        <div className=" flex flex-col gap-y-5">
+          <img src={git} alt="figma" className="w-36 h-36 ml-28 mb-4 " />
+          <h1 className="font-bold text-one text-2xl text-center">Git</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
-          <BiLogoRedux className="w-36 h-36  rounded-lg text-[#764ABC]" />
-          <h1 className="font-bold text-one text-2xl">Redux</h1>
+        <div className=" flex flex-col gap-y-5">
+          <BiLogoRedux className="w-36 h-36  text-[#764ABC] ml-24 mb-4" />
+          <h1 className="font-bold text-one text-2xl text-center">Redux</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
+        <div className=" flex flex-col  gap-y-5">
           <img
             src={trello}
             alt="figma"
-            className="w-40 h-40 rounded-lg bg-white"
+            className="w-32 h-32  bg-white ml-28 mb-7"
           />
-          <h1 className="font-bold text-one text-2xl">Trello</h1>
+          <h1 className="font-bold text-one text-2xl text-center">Trello</h1>
         </div>
       </Slider>
     </div>
