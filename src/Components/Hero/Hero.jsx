@@ -51,7 +51,7 @@ function Hero() {
           <img
             src={Foto}
             alt="foto"
-            className="object-cover w-[550px] h-[600px] relative  mb-20 rounded-[100%] bg-blue-200"
+            className="object-cover w-[500px] h-[600px] relative  mb-20 rounded-[100%] bg-gradient-to-r from-orange-100 to-blue-200 border border-white"
           />
         </div>
       </div>
