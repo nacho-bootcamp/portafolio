@@ -7,11 +7,11 @@ const AboutMe = () => {
     <div className="grid grid-cols-1 md:grid-cols-8 pt-24 ">
       <div className=" md:col-span-4 ">
         <div className="flex gap-2 items-center pl-[180px]">
-          <h3 className="text-indigo-500 font-medium text-lg">About Me</h3>
+          <h3 className="text-indigo-500 font-medium text-base">About Me</h3>
           <BsFillPersonFill className="text-indigo-500 " />
         </div>
         <div className="pl-[180px]">
-          <h2 className="font-bold text-3xl pb-8">
+          <h2 className="font-bold text-4xl pb-8">
             ¿Por que deberias
             <span className="text-orange-400"> contratarme </span> <br />
             para tu<span className="text-indigo-500"> empresa?</span>
