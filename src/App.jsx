@@ -12,8 +12,8 @@ function App() {
       <Home />
       <Hero />
       <AboutMe />
-      <Carusel />
       <Aplicaciones />
+      <Carusel />
       <Formulario />
     </div>
   );
