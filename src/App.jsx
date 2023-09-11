@@ -1,3 +1,4 @@
+import AboutMe from "./Components/AboutMe/AboutMe";
 import Formulario from "./Components/Formulario/Formulario";
 import Habilidades from "./Components/Habilidades/Habilidades";
 import Home from "./Components/Head/Home";
@@ -9,6 +10,7 @@ function App() {
     <div className="w-[658px] sm:w-full">
       <Home />
       <Hero />
+      <AboutMe />
       <Habilidades />
       <Aplicaciones />
       <Formulario />
