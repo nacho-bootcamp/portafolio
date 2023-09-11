@@ -1,9 +1,10 @@
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Formulario from "./Components/Formulario/Formulario";
-import Habilidades from "./Components/Habilidades/Habilidades";
+
 import Home from "./Components/Head/Home";
 import Hero from "./Components/Hero/Hero";
 import Aplicaciones from "./Components/MisAplicaciones/Aplicaciones";
+import Carusel from "./Components/Carusel/Carusel";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Home />
       <Hero />
       <AboutMe />
-      <Habilidades />
+      <Carusel />
       <Aplicaciones />
       <Formulario />
     </div>
