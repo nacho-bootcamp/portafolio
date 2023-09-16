@@ -3,12 +3,16 @@ import pi from "../../assets/img/PI.png";
 import pi2 from "../../assets/img/PI(2).png";
 import pf from "../../assets/img/pf.png";
 import pf2 from "../../assets/img/pf(2).png";
-import react from "../../assets/img/reactIcono.png";
-import css from "../../assets/img/css.png";
-import js from "../../assets/img/js.png";
-import express from "../../assets/img/express.png";
-import bootstrap from "../../assets/img/bootstrap.png";
-import { BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
+
+import { SiExpress } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
+import {
+  BiLogoMongodb,
+  BiLogoPostgresql,
+  BiLogoReact,
+  BiLogoCss3,
+  BiLogoBootstrap,
+} from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
 
 const Aplicaciones = () => {
@@ -42,10 +46,10 @@ const Aplicaciones = () => {
               Aplicacion para ver las actividades y la informacion de cada pais
             </h4>
             <div className="flex justify-center gap-5  ">
-              <img src={react} alt="react" className="w-12" />
-              <img src={css} alt="css" className="w-12" />
-              <img src={js} alt="js" className="w-12" />
-              <img src={express} alt="express" className="w-12" />
+              <BiLogoReact className="w-12 h-12" />
+              <BiLogoCss3 className="w-12 h-12" />
+              <RiJavascriptFill className="w-12 h-12" />
+              <SiExpress className="w-12 h-12" />
               <BiLogoPostgresql className="w-12 h-12 text-[#38BDF8]" />
             </div>
           </div>
@@ -67,9 +71,9 @@ const Aplicaciones = () => {
             </h4>
             <div className="flex justify-center gap-5  ">
               <SiNextdotjs className="w-12 h-12 text-[#000000] " />
-              <img src={bootstrap} alt="bootstrap" className="w-12" />
-              <img src={js} alt="js" className="w-12" />
-              <img src={express} alt="express" className="w-12" />
+              <BiLogoBootstrap className="w-12 h-12" />
+              <RiJavascriptFill className="w-12 h-12" />
+              <SiExpress className="w-12 h-12" />
               <BiLogoMongodb className="w-12 h-12 rounded-lg text-[#01EC64]" />
             </div>
           </div>

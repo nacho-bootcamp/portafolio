@@ -73,9 +73,12 @@ const Formulario = () => {
   };
 
   return (
-    <div id="Contacto" className="bg-gray-200 ">
-      <h1 className="text-center text-5xl font-bold text-one pt-7 pb-24">
-        Contácta <span className="text-two">Me! </span>{" "}
+    <div
+      id="Contacto"
+      className=" border-white  border-r-8 border-l-8 bg-gradient-to-r from-orange-100 to-blue-200 rounded-b-[50px] "
+    >
+      <h1 className="text-center text-5xl font-bold text-orange-400 pt-7 pb-24">
+        Contácta <span className="text-[#544FB9]">Me! </span>{" "}
       </h1>
 
       <form ref={form} onSubmit={onSubmit} className="flex flex-col">

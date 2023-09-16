@@ -2,24 +2,24 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import javascript from "../../assets/img/js.png";
-import javaIcon from "../../assets/img/javaIcon.png";
-import typescript from "../../assets/img/typescript.png";
-import bootstrap from "../../assets/img/bootstrap.png";
-import html from "../../assets/img/html-5.png";
-import css from "../../assets/img/css.png";
-import express from "../../assets/img/express.png";
-import react from "../../assets/img/reactIcono.png";
+
 import figma from "../../assets/img/figma.png";
-import git from "../../assets/img/git.png";
-import trello from "../../assets/img/trello.png";
-import { SiNestjs } from "react-icons/si";
+
+import { SiNestjs, SiExpress } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { RiJavascriptFill, RiHtml5Fill } from "react-icons/ri";
 import {
   BiLogoTailwindCss,
   BiLogoMongodb,
   BiLogoPostgresql,
   BiLogoRedux,
   BiLogoAngular,
+  BiLogoTypescript,
+  BiLogoJava,
+  BiLogoCss3,
+  BiLogoBootstrap,
+  BiLogoReact,
+  BiLogoTrello,
 } from "react-icons/bi";
 
 const InfiniteCarousel = () => {
@@ -34,47 +34,39 @@ const InfiniteCarousel = () => {
   };
 
   return (
-    <div className="w-3/4 mx-auto my-20 pl-5 ">
-      <h1 className="text-center text-5xl mb-14 font-bold bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text pb-6">
+    <div className="w-3/4 mx-auto my-10 pl-5 ">
+      <h1 className="text-center text-4xl mb-1 font-bold bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text pb-6">
         Mis Tecnologias
       </h1>
       <Slider {...settings} className="py-4">
         <div>
-          <img src={typescript} alt="Typescript" className="w-32 h-32 ml-28" />
+          <BiLogoTypescript className="w-32 h-32 ml-28" />
           <h1 className="font-bold text-one text-2xl mt-6 text-center">
             Typescript
           </h1>
         </div>
         <div>
-          <img src={javaIcon} alt="java" className="w-32 h-32 ml-32" />
+          <BiLogoJava className="w-32 h-32 ml-32" />
           <h1 className="font-bold text-one text-2xl pl-10 mt-6 text-center ">
             Java
           </h1>
         </div>
         <div>
-          <img
-            src={javascript}
-            alt="js"
-            className="w-32 h-32 rounded-2xl ml-[120px]"
-          />
+          <RiJavascriptFill className="w-32 h-32 rounded-2xl ml-[120px]" />
           <h1 className="font-bold text-one text-2xl pl-3 mt-6 text-center">
             Javascript
           </h1>
         </div>
         <div className=" flex flex-col items-center justify-center  gap-y-5">
-          <img src={html} alt="html" className="w-32 h-32 ml-28" />
+          <RiHtml5Fill className="w-32 h-32 ml-28" />
           <h1 className="font-bold text-one text-2xl mt-6 text-center">HTML</h1>
         </div>
         <div className=" flex flex-col items-center justify-center gap-y-5">
-          <img src={css} alt="css" className="w-32 h-32  ml-28 mb-4" />
+          <BiLogoCss3 className="w-32 h-32  ml-28 mb-4" />
           <h1 className="font-bold text-one text-2xl text-center ">CSS</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <img
-            src={bootstrap}
-            alt="bootstrap"
-            className="w-32 h-32 ml-28 rounded-lg mb-4"
-          />
+          <BiLogoBootstrap className="w-32 h-32 ml-28 rounded-lg mb-4" />
           <h1 className="font-bold text-one text-2xl text-center">Bootstrap</h1>
         </div>
         <div className=" flex flex-col  gap-y-5 ">
@@ -82,11 +74,11 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Tailwind</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <img src={express} alt="express" className="w-32 h-32  ml-28 mb-4" />
+          <SiExpress className="w-32 h-32  ml-28 mb-4" />
           <h1 className="font-bold text-one text-2xl text-center">Express</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
-          <img src={react} alt="react" className="w-32 h-32 ml-28 mb-4" />
+          <BiLogoReact className="w-32 h-32 ml-28 mb-4" />
           <h1 className="font-bold text-one text-2xl text-center">React</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
@@ -113,7 +105,7 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Figma</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
-          <img src={git} alt="figma" className="w-36 h-36 ml-28 mb-4 " />
+          <FaGitAlt className="w-36 h-36 ml-28 mb-4 " />
           <h1 className="font-bold text-one text-2xl text-center">Git</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
@@ -121,11 +113,7 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Redux</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <img
-            src={trello}
-            alt="figma"
-            className="w-32 h-32  bg-white ml-28 mb-7"
-          />
+          <BiLogoTrello className="w-32 h-32  bg-white ml-28 mb-7" />
           <h1 className="font-bold text-one text-2xl text-center">Trello</h1>
         </div>
       </Slider>

@@ -1,11 +1,12 @@
 import React from "react";
 import { BsFillPersonFill } from "react-icons/bs";
 import WhatsAppButton from "../whatsapp";
+import AboutMy from "../../assets/img/aboutmy.jpeg";
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-8 pt-24 ">
-      <div className=" md:col-span-4 ">
+    <div className="grid grid-cols-1 md:grid-cols-8   py-24  ">
+      <div className=" md:col-span-4">
         <div className="flex gap-2 items-center pl-[180px]">
           <h3 className="text-indigo-500 font-medium text-base">About Me</h3>
           <BsFillPersonFill className="text-indigo-500 " />
@@ -29,7 +30,13 @@ const AboutMe = () => {
           <WhatsAppButton />
         </div>
       </div>
-      <div className=" md:col-span-4 flex items-center justify-center"></div>
+      <div className=" md:col-span-4 flex justify-center items-center">
+        <img
+          className="h-[430px] w-[500px] rounded-lg shadow-2xl shadow-orange-500/50"
+          src={AboutMy}
+          alt=""
+        />
+      </div>
     </div>
   );
 };
