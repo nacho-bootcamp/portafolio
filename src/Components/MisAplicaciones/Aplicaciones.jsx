@@ -46,10 +46,10 @@ const Aplicaciones = () => {
               Aplicacion para ver las actividades y la informacion de cada pais
             </h4>
             <div className="flex justify-center gap-5  ">
-              <BiLogoReact className="w-12 h-12" />
-              <BiLogoCss3 className="w-12 h-12" />
-              <RiJavascriptFill className="w-12 h-12" />
-              <SiExpress className="w-12 h-12" />
+              <BiLogoReact className="w-12 h-12 text-[#00D8FF]" />
+              <BiLogoCss3 className="w-12 h-12 text-[#3178C6]" />
+              <RiJavascriptFill className="w-12 h-12 text-[#F7DF1E]" />
+              <SiExpress className="w-12 h-12 text-black" />
               <BiLogoPostgresql className="w-12 h-12 text-[#38BDF8]" />
             </div>
           </div>
@@ -71,9 +71,9 @@ const Aplicaciones = () => {
             </h4>
             <div className="flex justify-center gap-5  ">
               <SiNextdotjs className="w-12 h-12 text-[#000000] " />
-              <BiLogoBootstrap className="w-12 h-12" />
-              <RiJavascriptFill className="w-12 h-12" />
-              <SiExpress className="w-12 h-12" />
+              <BiLogoBootstrap className="w-12 h-12 text-[#9013FE]" />
+              <RiJavascriptFill className="w-12 h-12 text-[#F7DF1E]" />
+              <SiExpress className="w-12 h-12 text-black" />
               <BiLogoMongodb className="w-12 h-12 rounded-lg text-[#01EC64]" />
             </div>
           </div>
