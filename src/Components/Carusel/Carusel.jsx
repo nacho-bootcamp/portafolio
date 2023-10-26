@@ -40,33 +40,33 @@ const InfiniteCarousel = () => {
       </h1>
       <Slider {...settings} className="py-4">
         <div>
-          <BiLogoTypescript className="w-32 h-32 ml-28" />
+          <BiLogoTypescript className="w-32 h-32 ml-28 text-[#3178C6]" />
           <h1 className="font-bold text-one text-2xl mt-6 text-center">
             Typescript
           </h1>
         </div>
         <div>
-          <BiLogoJava className="w-32 h-32 ml-32" />
+          <BiLogoJava className="w-32 h-32 ml-32  text-[#0074BD]" />
           <h1 className="font-bold text-one text-2xl pl-10 mt-6 text-center ">
             Java
           </h1>
         </div>
         <div>
-          <RiJavascriptFill className="w-32 h-32 rounded-2xl ml-[120px]" />
+          <RiJavascriptFill className="w-32 h-32 rounded-2xl ml-[120px] text-[#F7DF1E]" />
           <h1 className="font-bold text-one text-2xl pl-3 mt-6 text-center">
             Javascript
           </h1>
         </div>
-        <div className=" flex flex-col items-center justify-center  gap-y-5">
+        <div className=" flex flex-col items-center justify-center  gap-y-5 text-[#E14E1D]">
           <RiHtml5Fill className="w-32 h-32 ml-28" />
           <h1 className="font-bold text-one text-2xl mt-6 text-center">HTML</h1>
         </div>
-        <div className=" flex flex-col items-center justify-center gap-y-5">
+        <div className=" flex flex-col items-center justify-center gap-y-5 text-[#3178C6]">
           <BiLogoCss3 className="w-32 h-32  ml-28 mb-4" />
           <h1 className="font-bold text-one text-2xl text-center ">CSS</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <BiLogoBootstrap className="w-32 h-32 ml-28 rounded-lg mb-4" />
+          <BiLogoBootstrap className="w-32 h-32 ml-28 rounded-lg mb-4 text-[#9013FE]" />
           <h1 className="font-bold text-one text-2xl text-center">Bootstrap</h1>
         </div>
         <div className=" flex flex-col  gap-y-5 ">
@@ -74,11 +74,11 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Tailwind</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <SiExpress className="w-32 h-32  ml-28 mb-4" />
+          <SiExpress className="w-32 h-32  ml-28 mb-4 text-black" />
           <h1 className="font-bold text-one text-2xl text-center">Express</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
-          <BiLogoReact className="w-32 h-32 ml-28 mb-4" />
+          <BiLogoReact className="w-32 h-32 ml-28 mb-4 text-[#00D8FF]" />
           <h1 className="font-bold text-one text-2xl text-center">React</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
@@ -105,7 +105,7 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Figma</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
-          <FaGitAlt className="w-36 h-36 ml-28 mb-4 " />
+          <FaGitAlt className="w-36 h-36 ml-28 mb-4 text-[#F34F29] " />
           <h1 className="font-bold text-one text-2xl text-center">Git</h1>
         </div>
         <div className=" flex flex-col gap-y-5">
@@ -113,7 +113,7 @@ const InfiniteCarousel = () => {
           <h1 className="font-bold text-one text-2xl text-center">Redux</h1>
         </div>
         <div className=" flex flex-col  gap-y-5">
-          <BiLogoTrello className="w-32 h-32  bg-white ml-28 mb-7" />
+          <BiLogoTrello className="w-32 h-32  bg-white ml-28 mb-7 text-[#3178C6]" />
           <h1 className="font-bold text-one text-2xl text-center">Trello</h1>
         </div>
       </Slider>
