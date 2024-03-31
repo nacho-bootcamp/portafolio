@@ -13,9 +13,8 @@ function Home() {
         </h2>
       </div>
       <nav
-        className={`fixed w-[80%] md:w-[40%] xl:w-full h-full  ${
-          showMenu ? "left-0" : "-left-full"
-        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 z-50 `}
+        className={`fixed w-[80%] md:w-[40%] xl:w-full h-full  ${showMenu ? "left-0" : "-left-full"
+          } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 text-base transition-all duration-500 z-50 `}
       >
         <a
           href="#Inicio"
@@ -24,10 +23,10 @@ function Home() {
           Inicio
         </a>
         <a
-          href="#Habilidades"
+          href="#tecnologia"
           className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  text-gray-400 font-medium hover:bg-orange-500 hover:text-white px-4 py-1 rounded-[20px]"
         >
-          Habilidades
+          Tecnologias
         </a>
         <a
           href="#Aplicaciones"

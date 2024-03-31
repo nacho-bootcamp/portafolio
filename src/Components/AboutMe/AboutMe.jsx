@@ -19,12 +19,11 @@ const AboutMe = () => {
           </h2>
 
           <p className="text-gray-400 font-black ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Similique obcaecati perspiciatis assumenda hic molestiae quisquam
-            excepturi, <br />
-            odio doloremque consequatur, incidunt, voluptatem earum veritatis
-            repellat <br />
-            dicta vel non eius iusto! Aliquam.
+            Soy una persona muy compremetida con lo que hace  <br />
+            auto didacta siempre poniendo el 100% para poder mejorar cada dia
+            y para entregar los tickets, <br />
+            tambien soy amistoso y compañero dispuesto ayudar a mis colegas<br />
+            en cualquier duda que tengan.
           </p>
 
           <WhatsAppButton />
