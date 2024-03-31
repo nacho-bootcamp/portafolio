@@ -2,6 +2,7 @@ import React from "react";
 import Foto from "../../assets/img/portfolio.png";
 import CV from "../../Curriculum/CV-IgnacioCardozo.pdf";
 import { FcCalendar } from "react-icons/fc";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
@@ -11,18 +12,23 @@ function Hero() {
     >
       {/* info */}
       <div className="  md:col-span-4 flex items-center justify-center">
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <h1 className="font-black text-center text-4xl xl:text-4xl text-gray-400 ">
             HOLA MI NOMBRE ES
           </h1>
-          <h2 className="text-center text-6xl xl:text-6xl font-black ">
-            <span className="bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text">
-              IGNACIO CARDOZO
-            </span>
+          <h2 className="bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text text-center text-6xl xl:text-6xl font-black ">
+            <TypeAnimation
+              sequence={[
+                "IGNACIO CARDOZO",
+                1000,
+                "WEB DEVELOPER",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h2>
-          <h3 className="text-center text-4xl xl:text-2xl text-gray-400 font-black mt-5">
-            Full-Stack <span className="text-[#544FB9]">Web Developer</span>
-          </h3>
           <p className="text-center text-2xl py-8 xl:text-lg xl:py-[40px] text-gray-400 font-black">
             Soy un desarrollador FullStack apasionado con la <br /> programacion
             y tengo 2 años de experiencia en <br />
