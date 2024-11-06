@@ -3,6 +3,7 @@ import Foto from "../../assets/img/portfolio.png";
 import CV from "../../Curriculum/CV-IgnacioCardozo.pdf";
 import { FcCalendar } from "react-icons/fc";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion"
 
 function Hero() {
   return (
@@ -12,11 +13,26 @@ function Hero() {
     >
       {/* info */}
       <div className="  md:col-span-4 flex items-center justify-center">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-black text-center text-4xl xl:text-4xl text-gray-400 ">
+        <div
+          className="flex flex-col justify-center items-center">
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 }, }} className="font-black text-center text-4xl xl:text-4xl text-gray-400 ">
             HOLA MI NOMBRE ES
-          </h1>
-          <h2 className="bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text text-center text-6xl xl:text-6xl font-black ">
+          </motion.h1>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="bg-gradient-to-r from-[#673F98] to-orange-400   text-transparent bg-clip-text text-center text-6xl xl:text-6xl font-black ">
             <TypeAnimation
               sequence={[
                 "IGNACIO CARDOZO",
@@ -28,12 +44,20 @@ function Hero() {
               speed={50}
               repeat={Infinity}
             />
-          </h2>
-          <p className="text-center text-2xl py-8 xl:text-lg xl:py-[40px] text-gray-400 font-black">
+          </motion.h2>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }} className="text-center text-2xl py-8 xl:text-lg xl:py-[40px] text-gray-400 font-black">
             Soy un desarrollador FullStack apasionado con la <br /> programacion
             y tengo 2 años de experiencia en <br />
             este increible mundo .
-          </p>
+          </motion.p>
           <div className="flex gap-8 justify-center">
             <a
               download

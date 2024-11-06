@@ -11,6 +11,8 @@ import odoo from "../../assets/img/odoo.png"
 import java from "../../assets/img/java.png"
 import python from "../../assets/img/python.png"
 import aws from "../../assets/img/aws.png"
+import oracle from "../../assets/img/oracle.jpg"
+
 
 import { SiExpress } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
@@ -34,7 +36,7 @@ const InfiniteCarousel = () => {
     speed: 1000, // Velocidad de transición en milisegundos
     slidesToShow: 4, // Número de elementos visibles a la vez
     slidesToScroll: 4, // Número de elementos para desplazarse en cada cambio
-    autoplay: true, // Reproducción automática
+    autoplay: false, // Reproducción automática
     autoplaySpeed: 3000, // Intervalo de tiempo entre transiciones automáticas en milisegundos
   };
 
@@ -153,13 +155,21 @@ const InfiniteCarousel = () => {
         </div>
         <div>
           <div className="flex justify-center items-center">
-            <img src={aws} alt="AWS" className="w-[170px] h-[170px]" />
+            <img src={oracle} alt="oracle" className="w-36 h-36 text-[#336791]" />
+          </div>
+          <h1 className="font-bold text-one text-2xl text-center">
+            Oracle DB
+          </h1>
+        </div>
+        <div>
+          <div className="flex justify-center items-center">
+            <img src={aws} alt="AWS" className="w-48 h-[153px]" />
           </div>
           <h1 className="font-bold text-one text-2xl text-center">AWS</h1>
         </div>
         <div>
           <div className="flex justify-center items-center">
-            <img src={figma} alt="figma" className="w-32 h-32   mb-7 flex justify-center items-center" />
+            <img src={figma} alt="figma" className="w-28 h-28 mb-10 flex justify-center items-center" />
           </div>
           <h1 className="font-bold text-one text-2xl text-center">Figma</h1>
         </div>

@@ -23,7 +23,7 @@ const Aplicaciones = () => {
     >
       <div className="mb-8">
         <h1 className="text-center font-bold text-5xl text-one">
-          Mis Aplicaciones <span className="text-orange-400"> Web</span>
+          Últimos<span className="text-orange-400"> Proyectos</span>
         </h1>
       </div>
       {/* Proyectos */}

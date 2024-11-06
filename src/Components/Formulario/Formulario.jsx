@@ -78,7 +78,7 @@ const Formulario = () => {
       className=" border-white  border-r-8 border-l-8 bg-gradient-to-r from-orange-100 to-blue-200 rounded-b-[50px] "
     >
       <h1 className="text-center text-5xl font-bold text-orange-400 pt-7 pb-24">
-        Contácta <span className="text-[#544FB9]">Me! </span>{" "}
+        ¡Trabajemos <span className="text-[#544FB9]">Juntos! </span>{" "}
       </h1>
 
       <form ref={form} onSubmit={onSubmit} className="flex flex-col">
@@ -123,9 +123,8 @@ const Formulario = () => {
         <div className=" flex justify-center mb-24">
           <button
             disabled={habilitar()}
-            className={`w-[146px] h-[46px] text-white font-bold rounded-lg  ${
-              habilitar() ? "cursor-not-allowed bg-gray-500" : "bg-two"
-            }`}
+            className={`w-[146px] h-[46px] text-white font-bold rounded-lg  ${habilitar() ? "cursor-not-allowed bg-gray-500" : "bg-two"
+              }`}
           >
             Enviar
           </button>
